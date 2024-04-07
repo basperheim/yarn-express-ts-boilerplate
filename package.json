@@ -1,0 +1,9 @@
+{
+  "name": "yarn-express-ts-boilerplate",
+  "version": "1.0.0",
+  "description": "NodeJS/Express boilerplate for a TS app using the Yarn package manager",
+  "main": "src/server.ts",
+  "repository": "git@github.com:basperheim/yarn-express-ts-boilerplate.git",
+  "author": "Benji Asperheim <basperheim@gmail.com>",
+  "license": "MIT"
+}
