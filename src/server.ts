@@ -1,5 +1,6 @@
 import express, { Application, Request, Response, NextFunction } from "express";
-import dotenv from "dotenv";
+import * as dotenv from "dotenv";
+dotenv.config({ path: __dirname + "/.env" });
 
 // Load environment variables from .env file
 dotenv.config();
@@ -16,4 +17,5 @@ app.get("/", (req: Request, res: Response) => {
 const PORT: number = parseInt(process.env.PORT || "8080");
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
+  console.log(`.env file test: ${process.env.HELLO}`); // should log 'world' if `HELLO=world` in .env
 });
